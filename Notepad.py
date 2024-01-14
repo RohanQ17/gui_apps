@@ -54,8 +54,7 @@ def savefile(*args):
 window= Tk()
 window.title("notes")
 
-icon = PhotoImage(file="icon2.png")
-window.iconphoto(True, icon)
+
 
 
 window.geometry("600x500")
