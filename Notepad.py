@@ -6,9 +6,6 @@ from tkinter.filedialog import *
 
 import os
 
-
-
-
 def gg():
     showinfo("about this program","this program was made to implement python gui skills with various utility options added to make it actually useful to the people using it")
 def change_color():
@@ -44,7 +41,6 @@ def paste():
     text.event_generate("<<Paste>>")
 
 
-
 def savefile(*args):
     file = filedialog.asksaveasfile(defaultextension='.txt',
                                     filetypes=[("Text file",".txt"),
@@ -58,7 +54,7 @@ def savefile(*args):
 window= Tk()
 window.title("notes")
 
-icon = PhotoImage(file="C:\\Users\\ROHAN\\OneDrive\\Desktop\\dev\\icon2.png")
+icon = PhotoImage(file="icon2.png")
 window.iconphoto(True, icon)
 
 
@@ -121,7 +117,5 @@ edit_menu.add_command(label="paste file",command=paste)
 help_menu=Menu(menubar,tearoff=0,bg="#e8f4ff")
 menubar.add_cascade(label="HELP",menu=help_menu)
 help_menu.add_command(label="About",command=gg)
-
-
 
 window.mainloop()
